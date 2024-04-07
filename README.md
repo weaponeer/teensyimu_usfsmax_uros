@@ -3,6 +3,7 @@
 ## Description
 
 This is a quick hack together of a platformio microros publisher for the USFSMAX (https://github.com/gregtomasch/USFSMAX)
+<img src="resources/IMG_4556.png" alt="usfsmax" width="200"/>
 
 ## Notes
 
