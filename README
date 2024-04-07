@@ -14,7 +14,8 @@ This is a quick hack together of a platformio microros publisher for the USFSMAX
 
 - transport is 'serial', at 6M bits. See microros docs to change transport
 - command line -- docker run -it --rm -v /dev:/dev -v /dev/shm:/dev/shm --privileged --name poodleros --net=host microros/micro-ros-agent:iron serial --dev /dev/ttyACM0 -v4 -b 6000000
-- python docker api
+
+## python docker api
 
 ```python
 
