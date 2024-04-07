@@ -17,9 +17,11 @@ This is a quick hack together of a platformio microros publisher for the USFSMAX
 - python docker api
 
 ```python
+
 self.uros_docker_client = docker.from_env()
 bridge_command = 'serial --dev /dev/ttyACM0 -v4 -b 6000000'
 self.microros_container = self.uros_docker_client.containers.run('microros/micro-ros-agent:iron',volumes=['/dev:/dev', '/dev/shm:/dev/shm'],privileged=True,remove=True,name='poodleros',network_mode='host',detach=True,command=bridge_command)
+
 ```
 
 ## TODO
