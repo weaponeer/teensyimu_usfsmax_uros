@@ -26,6 +26,7 @@ bridge_command = 'serial --dev /dev/ttyACM0 -v4 -b 6000000'
 self.microros_container = self.uros_docker_client.containers.run('microros/micro-ros-agent:iron',volumes=['/dev:/dev', '/dev/shm:/dev/shm'],privileged=True,remove=True,name='yournamehere',network_mode='host',detach=True,command=bridge_command)
 
 ```
+<img src="resources/docker_output.png" alt="usfsmax" width="600"/>
 
 ## TODO
 
